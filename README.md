@@ -1,6 +1,6 @@
 # eslint-plugin-no-hard-coded-urls
 
-disallow hard coded urls
+An ESLint plugin for detecting hard-coded URLs in code. Hard-coded URLs can create dependencies on specific environments and cause bugs when deploying to different environments. This plugin can be used to ensure code portability by checking for hard-coded URLs.
 
 ## Installation
 
@@ -22,20 +22,17 @@ Add `no-hard-coded-urls` to the plugins section of your `.eslintrc` configuratio
 
 ```json
 {
-    "plugins": [
-        "no-hard-coded-urls"
-    ]
+  "plugins": ["no-hard-coded-urls"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "no-hard-coded-urls/rule-name": 2
-    }
+  "rules": {
+    "hard-coded-url/no-hard-coded-url": ["error"]
+  }
 }
 ```
 
@@ -49,4 +46,14 @@ Then configure the rules you want to use under the rules section.
 
 <!-- end auto-generated rules list -->
 
+## Why Use eslint-plugin-hard-coded-url?
 
+Hard-coded URLs in code can create dependencies on specific environments and cause bugs when deploying to different environments. This plugin can help prevent these issues by checking for hard-coded URLs and ensuring code portability.
+
+## Contributing
+
+Contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License.
